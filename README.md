@@ -45,17 +45,17 @@ Make use of the many generators for code, try `ember help generate` for more det
 Assumptions/Rules:  
 	1. There is a parking lot.  
     2. There are there three types of vehicles:  
-		Motorcycle  
-	   	Sedan  
-	   	Truck  
+	  1. Motorcycle  
+	  2. Sedan  
+	  3. Truck  
     3. There are three types of parking spaces:  
-		Small  
-		Medium  
-		Large  
+	  1. Small  
+	  2. Medium  
+	  3. Large  
 	4. The vehicles can park in the following spaces:  
-	   	A motorcycle can part in all spaces, small, medium and large.  
-	    A sedan can park only in the medium and large space.  
-	    A truck can only park in the large space.  
+	  1. A motorcycle can part in all spaces, small, medium and large.  
+	  2. A sedan can park only in the medium and large space.  
+	  3. A truck can only park in the large space.  
 	5. If the parking lot is full, new vehicles can no longer enter.  They must wait in queue.   
 	6. Vehicles cannot cut in front of other vehicles in the queue.  
     
