@@ -47,11 +47,11 @@ Assumptions/Rules:
 2. There are there three types of vehicles:  
   1. Motorcycle  
   2. Sedan  
-  3. Truck  
+  3. Truck
 3. There are three types of parking spaces:  
   1. Small  
   2. Medium  
-  3. Large  
+  3. Large
 4. The vehicles can park in the following spaces:  
   1. A motorcycle can part in all spaces, small, medium and large.  
   2. A sedan can park only in the medium and large space.  
