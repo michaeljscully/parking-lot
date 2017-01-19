@@ -42,28 +42,28 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 
 ### Project Guidelines #########################
-Assumptions/Rules:
-	1. There is a parking lot.
-    2. There are there three types of vehicles:
-		Motorcycle
-	   	Sedan
-	   	Truck
-    3. There are three types of parking spaces:
-		Small
-		Medium
-		Large
-	4. The vehicles can park in the following spaces:
-	   	A motorcycle can part in all spaces, small, medium and large.
-	    A sedan can park only in the medium and large space.
-	    A truck can only park in the large space.
-	5. If the parking lot is full, new vehicles can no longer enter.  They must wait in queue. 
-	6. Vehicles cannot cut in front of other vehicles in the queue.
- 
-Please create a program that:
-	1. Display the state of the parking lot and queue in some kind of GUI to the user.
-	2. Persists the state of the parking lot and vehicles in queue.  If using a web application, the state should persist over server restarts.  If thick client/console, the state should persist an application restart.
-	3. Give the user the ability to add a new type of vehicle to the system, motorcycle, sedan or truck.
-	4. When the vehicle is introduced, it should follow the rules mentioned above
-	5. Give the user the ability to remove a random vehicle from the parking lot. 
-	6. When a vehicle is removed, the next car in the queue should attempt to park with the rules above.  If there are no available parking spaces, the next vehicle should continue to wait.
-	7. When the state of the parking lot/queue changes, the UI should be updated accordingly.
+Assumptions/Rules:  
+	1. There is a parking lot.  
+    2. There are there three types of vehicles:  
+		Motorcycle  
+	   	Sedan  
+	   	Truck  
+    3. There are three types of parking spaces:  
+		Small  
+		Medium  
+		Large  
+	4. The vehicles can park in the following spaces:  
+	   	A motorcycle can part in all spaces, small, medium and large.  
+	    A sedan can park only in the medium and large space.  
+	    A truck can only park in the large space.  
+	5. If the parking lot is full, new vehicles can no longer enter.  They must wait in queue.   
+	6. Vehicles cannot cut in front of other vehicles in the queue.  
+    
+Please create a program that:  
+	1. Display the state of the parking lot and queue in some kind of GUI to the user.  
+	2. Persists the state of the parking lot and vehicles in queue.  If using a web application, the state should persist over server restarts.  If thick client/console, the state should persist an application restart.   
+	3. Give the user the ability to add a new type of vehicle to the system, motorcycle, sedan or truck.   
+	4. When the vehicle is introduced, it should follow the rules mentioned above   
+	5. Give the user the ability to remove a random vehicle from the parking lot.   
+	6. When a vehicle is removed, the next car in the queue should attempt to park with the rules above.  If there are no available parking spaces, the next vehicle should continue to wait.   
+	7. When the state of the parking lot/queue changes, the UI should be updated accordingly.   
