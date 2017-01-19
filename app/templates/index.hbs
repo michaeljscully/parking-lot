@@ -12,11 +12,9 @@
       </div>
       <div class="panel-body">
         <ul class="list-group">
-          <li class="list-group-item"><span class="badge">{{fa-icon "check-circle"}}</span> Route (full)</li>
-          <li class="list-group-item">Model (empty)</li>
-          <li class="list-group-item">View</li>
-          <li class="list-group-item">Template</li>
-          <li class="list-group-item">Controller?</li>
+          {{#each model as |lot|}}
+            <li class="list-group-item list-group-item-success"><span class="badge">{{fa-icon "check-circle"}}</span> Route (full)</li>
+          {{/each}}
         </ul>
       </div>
     </div>
@@ -28,11 +26,9 @@
       </div>
       <div class="panel-body">
         <ul class="list-group">
-          <li class="list-group-item"><span class="badge">{{fa-icon "fa-truck"}}</span> Truck</li>
-          <li class="list-group-item"><span class="badge">{{fa-icon "fa-motorcycle"}}</span> Motorcycle</li>
-          <li class="list-group-item"><span class="badge">{{fa-icon "fa-car"}}</span> Sedan</li>
-          <li class="list-group-item">Template</li>
-          <li class="list-group-item">Controller?</li>
+          {{#each model as |queue|}}
+            <li class="list-group-item">{{queue.id}}. {{queue.type}} <span class="badge"><i class="fa {{queue.icon}}"></i></span></li>
+          {{/each}}
         </ul>
       </div>
     </div>
@@ -48,9 +44,9 @@
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu">
-          <li><a href="#">Motorcycle</a></li>
-          <li><a href="#">Sedan</a></li>
-          <li><a href="#">Truck</a></li>
+          <li><a href="#">{{fa-icon "fa-motorcycle"}} Motorcycle</a></li>
+          <li><a href="#">{{fa-icon "fa-car"}} Sedan</a></li>
+          <li><a href="#">{{fa-icon "fa-truck"}} Truck</a></li>
         </ul>
       </div>
     </div>
