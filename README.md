@@ -41,7 +41,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 
 
-### Project Guidelines #########################
+# Project Guidelines #########################
 Assumptions/Rules:  
 	1. There is a parking lot.  
     2. There are there three types of vehicles:  
