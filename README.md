@@ -66,4 +66,28 @@ Please create a program that:
 	4. When the vehicle is introduced, it should follow the rules mentioned above   
 	5. Give the user the ability to remove a random vehicle from the parking lot.   
 	6. When a vehicle is removed, the next car in the queue should attempt to park with the rules above.  If there are no available parking spaces, the next vehicle should continue to wait.   
-	7. When the state of the parking lot/queue changes, the UI should be updated accordingly.   
+	7. When the state of the parking lot/queue changes, the UI should be updated accordingly. 
+
+
+  #Process
+  on page load:
+1. add 5 random vehicles to lot
+  1.1 each can be motorcycle, sedan, or truck
+2. add 5 random vehicles to queue
+  2.1 each can be motorcycle, sedan, or truck
+  2.2 assign id, icon, space
+
+1. click +
+2. create vehicle from type user clicks on
+3. set computed properties (icon, space-size)
+4. add vehicle into queue
+
+
+1. click -
+2. remove a vehicle from lot
+3. check to see if the next vehicle in queue can park
+  3.1 if yes
+    3.1.1 add vehicle into lot
+    3.1.2 remove vehicle from queue
+  3.2 if no
+    3.2.1 end loop
