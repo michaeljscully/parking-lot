@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
-var lot = [
+let lot = [
 {
 	isFull: true,
 	type: 'Car'
@@ -20,7 +20,6 @@ var lot = [
 ];
 
 export default DS.Model.extend({
-	isFull: DS.attr(),
-	type: DS.attr(),
-	
+	isFull: DS.attr('boolean'),
+	type: DS.attr('string')
 });

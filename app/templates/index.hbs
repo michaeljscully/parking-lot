@@ -29,7 +29,7 @@
       <div class="panel-body">
         <ul class="list-group">
           {{#each model as |queue|}}
-            <li class="list-group-item">{{queue.id}}. {{queue.type}} <span class="badge"><i class="fa {{queue.icon}}"></i></span></li>
+            <li class="list-group-item">{{queue.index}}. {{queue.type}} <span class="badge"><i class="fa {{queue.icon}}"></i></span></li>
           {{/each}}
         </ul>
       </div>
